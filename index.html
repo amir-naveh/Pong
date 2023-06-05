@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pong Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body { 
+            padding: 0; 
+            margin: 0; 
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(background.jpg) no-repeat center center fixed;
+            background-size: cover; /* This makes the image cover the entire body */
+
+        }
+        canvas {
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="pong" width="800" height="400"></canvas>
+    <button id="pauseButton">Pause/Resume</button>
+    <button id="newGameButton">New Game</button>
+    <img id="background" src="game_background.jpg" style="display: none;">
+    <script src="game.js"></script>
+</body>
+</html>
